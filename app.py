@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-df = pd.read_csv('E:\\Omdena Projects\\House Price Prediction in Sao Carlos\\app_building_df.csv')
+df = pd.read_csv('app_building_df.csv')
 
 st.header('Sao Carlos House Price Prediction', divider='rainbow')
 # get dropdown for Category

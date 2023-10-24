@@ -43,7 +43,7 @@ cols = ['Category', 'Subcategory', 'Built_up_area', 'Total_area', 'Bedroom',
 lst = [cat, sub_cat, built_area, total_area, bedrooms,
         bathrooms, garages, total_rooms, prop_char_95, address]
 
-result = ''
+#result = ''
 if st.button('Get House Price Prediction'):
     # Loadng the Transformer & the Model
 
@@ -62,8 +62,9 @@ if st.button('Get House Price Prediction'):
 
     # Write the predictions
     result = pred_price[0]
-st.success(f'House Price is: **{result}**')
-# st.success(f'House Price is: **{result:,}**')
+    st.success(f'House Price is: **{result:,}**')
+       
+#st.success(f'House Price is: **{result}**')
 
 
 

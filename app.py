@@ -6,10 +6,10 @@ df = pd.read_csv('app_building_df.csv')
 
 st.header('Sao Carlos House Price Prediction', divider='rainbow')
 # get dropdown for Category
-cat = st.selectbox('What House Category do you want?', df['Category'].unique())
+cat = st.selectbox('What House Category do you want?', df['Category'].unique(), index=None)
 
 # get dropdown for Subcategory
-sub_cat = st.selectbox('What is the Subcategory?', df['Subcategory'].unique())
+sub_cat = st.selectbox('What is the Subcategory?', df['Subcategory'].unique(), index=None)
 
 # Input built up
 built_area = st.slider('Built up Area', 0.0, max(df["Built_up_area"]), 1.0)

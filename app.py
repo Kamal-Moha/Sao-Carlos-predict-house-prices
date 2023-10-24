@@ -48,10 +48,10 @@ if st.button('Get House Price Prediction'):
     # Loadng the Transformer & the Model
 
     # Load the combined_pipeline from the pickle file
-    loaded_combined_pipeline = joblib.load('E:\\Omdena Projects\\House Price Prediction in Sao Carlos\\combined_pipeline.pkl')
+    loaded_combined_pipeline = joblib.load('combined_pipeline.pkl')
 
     # Load the best model from the 'best_model.pkl' file
-    loaded_best_model = joblib.load('E:\\Omdena Projects\\House Price Prediction in Sao Carlos\\best_model.pkl')
+    loaded_best_model = joblib.load('best_model.pkl')
 
     new_df = pd.DataFrame([lst], columns=cols)
 

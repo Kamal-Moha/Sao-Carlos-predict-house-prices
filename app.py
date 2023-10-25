@@ -15,7 +15,7 @@ sub_cat = st.selectbox('What is the Subcategory?', df['Subcategory'].unique(), i
 built_area = st.slider('Built up Area', 0.0, max(df["Built_up_area"]), 1.0)
 
 # Insert Total area
-total_area = st.slider('Built up Area', 0.0, max(df["Total_area"]), 1.0)
+total_area = st.slider('Total Area', 0.0, max(df["Total_area"]), 1.0)
 
 # Insert number of Bedrooms
 bedrooms = st.number_input("Number of bedrooms", min_value=0, value=0)
@@ -62,7 +62,10 @@ if st.button('Get House Price Prediction'):
 
     # Write the predictions
     result = pred_price[0]
-    st.success(f'House Price is: **{result:,}**')
+
+    with st.spinner('Wait for it...'):
+        sleep(5)
+    st.success(f'House Price is: **{result:,}** R$')
        
 #st.success(f'House Price is: **{result}**')
 

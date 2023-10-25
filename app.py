@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from time import sleep
 
 df = pd.read_csv('app_building_df.csv')
 
